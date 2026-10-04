@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ВосьмерикСтрой — рабочая айдентика</title>
+  <style>
+    :root {
+      --bg: #f5f1e8;
+      --ink: #171512;
+      --muted: #6a655d;
+      --rule: #c8c0b2;
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 28px;
+    }
+    .eyebrow {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 400;
+      font-size: clamp(44px, 8vw, 92px);
+      line-height: .92;
+      letter-spacing: -.04em;
+    }
+    .poster {
+      margin: 0 0 28px 0;
+      background: #e8e1d5;
+      padding: 12px;
+    }
+    .poster img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Мастерская православного зодчества · рабочая айдентика</div>
+      <h1>Восьмерик<br>Строй</h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="poster">
+      <img src="images/concept-1.webp" loading="lazy" decoding="async">
+    </div>
+    <div class="poster">
+      <img src="images/concept-2.webp" loading="lazy" decoding="async">
+    </div>
+  </main>
+</body>
+</html>
